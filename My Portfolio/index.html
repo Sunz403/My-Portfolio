@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <meta name="description" content="Modern portfolio website for an Application Development student specializing in C#, ASP.NET MVC, Flask, Kotlin, Unity, SQL, Supabase, and Azure.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+
+  <header class="site-header" id="siteHeader">
+    <nav class="navbar" aria-label="Main navigation">
+      <a class="brand" href="#home" aria-label="Go to home">
+        <span>My Portfolio</span>
+      </a>
+
+      <button class="nav-toggle" id="navToggle" type="button" aria-label="Open navigation" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <div class="nav-menu" id="navMenu">
+        <a href="#about">About</a>
+        <a href="#stack">Tech Stack</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+        <button class="theme-toggle" id="themeToggle" type="button" aria-label="Switch theme">
+        <span class="theme-icon" aria-hidden="true">Dark</span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero section" id="home">
+      <div class="hero-bg" aria-hidden="true">
+        <span class="grid-glow grid-glow-one"></span>
+        <span class="grid-glow grid-glow-two"></span>
+      </div>
+      <div class="hero-content reveal">
+        <p class="eyebrow">Aspiring C# Backend Developer</p>
+        <h1>Hi, I'm <span>Sanele Simamane</span>.</h1>
+        <h2>I build <span id="typingText" class="typing-text"></span></h2>
+        <p class="hero-copy">Building scalable applications with C#, modern backend systems, and cloud-ready thinking.</p>
+        <div class="hero-actions">
+          <a class="btn primary" href="#projects">View My Work</a>
+          <a class="btn secondary" href="#contact">Contact Me</a>
+        </div>
+      </div>
+
+      <div class="hero-panel reveal">
+        <div class="status-row">
+          <span class="status-dot"></span>
+          <span>Available for internships and junior roles</span>
+        </div>
+        <div class="metric-grid">
+          <article>
+            <strong>6+</strong>
+            <span>Technologies</span>
+          </article>
+          <article>
+            <strong>5</strong>
+            <span>Featured Projects</span>
+          </article>
+          <article>
+            <strong>Backend</strong>
+            <span>Web, Mobile, Cloud</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section about-section" id="about">
+      <div class="section-heading reveal">
+        <p class="eyebrow">About Me</p>
+        <h2>Focused on practical, reliable software.</h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-card reveal">
+          <p>
+            I am an Application Development student who enjoys turning complex problems into clear, usable systems. My work spans web applications, backend services, and database-driven solutions.
+          </p>
+          <p>
+            I am especially interested in software that solves real-world problems: booking platforms, business management systems, support portals, AI-assisted tools, and interactive experiences.
+          </p>
+        </div>
+        <div class="about-list reveal">
+          <article>
+            <span>01</span>
+            <div>
+              <h3>Problem Solving</h3>
+              <p>Breaking requirements into structured features, data models, and clean workflows.</p>
+            </div>
+          </article>
+          <article>
+            <span>02</span>
+            <div>
+              <h3>Real Systems</h3>
+              <p>Building applications with authentication, storage, tracking, management, and deployment in mind.</p>
+            </div>
+          </article>
+          <article>
+            <span>03</span>
+            <div>
+              <h3>Growth Mindset</h3>
+              <p>Learning across C#, Python, Kotlin, cloud services, AI tools, and full stack architecture.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section stack-section" id="stack">
+      <div class="section-heading reveal">
+        <p class="eyebrow">Tech Stack</p>
+        <h2>Tools I use to design, build, and ship applications.</h2>
+      </div>
+
+      <div class="stack-grid">
+        <article class="skill-card reveal" style="--level: 90%">
+          <div class="skill-top">
+            <div class="skill-logos" aria-hidden="true">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg" alt="">
+            </div>
+            <div>
+              <h3>C#</h3>
+              <p>Primary language</p>
+            </div>
+          </div>
+          <div class="skill-bar"><span></span></div>
+        </article>
+        <article class="skill-card reveal" style="--level: 86%">
+          <div class="skill-top">
+            <div class="skill-logos multi" aria-hidden="true">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="">
+            </div>
+            <div>
+              <h3>MySQL</h3>
+              <p>Databases</p>
+            </div>
+          </div>
+          <div class="skill-bar"><span></span></div>
+        </article>
+        <article class="skill-card reveal" style="--level: 86%">
+          <div class="skill-top">
+            <div class="skill-logos multi" aria-hidden="true">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dotnetcore/dotnetcore-original.svg" alt="">
+            </div>
+            <div>
+              <h3>ASP.NET MVC</h3>
+              <p>Backend</p>
+            </div>
+          </div>
+          <div class="skill-bar"><span></span></div>
+        </article>
+        <article class="skill-card reveal" style="--level: 60%">
+          <div class="skill-top">
+            <div class="skill-logos multi" aria-hidden="true">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original.svg" alt="">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sqlalchemy/sqlalchemy-original.svg" alt="">
+            </div>
+            <div>
+              <h3>Flask & SQLAlchemy</h3>
+              <p>Python backend</p>
+            </div>
+          </div>
+          <div class="skill-bar"><span></span></div>
+        </article>
+        <article class="skill-card reveal" style="--level: 60%">
+          <div class="skill-top">
+            <div class="skill-logos multi" aria-hidden="true">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kotlin/kotlin-original.svg" alt="">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/androidstudio/androidstudio-original.svg" alt="">
+            </div>
+            <div>
+              <h3>Kotlin</h3>
+              <p>Android Studio</p>
+            </div>
+          </div>
+          <div class="skill-bar"><span></span></div>
+        </article>
+        
+        <article class="skill-card reveal" style="--level: 88%">
+          <div class="skill-top">
+            <div class="skill-logos trio" aria-hidden="true">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="">
+            </div>
+            <div>
+              <h3>HTML, CSS, JavaScript</h3>
+              <p>Frontend</p>
+            </div>
+          </div>
+          <div class="skill-bar"><span></span></div>
+        </article>
+        <article class="skill-card reveal" style="--level: 70%">
+          <div class="skill-top">
+            <div class="skill-logos" aria-hidden="true">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/azure/azure-original.svg" alt="">
+            </div>
+            <div>
+              <h3>Azure</h3>
+              <p>Cloud services</p>
+            </div>
+          </div>
+          <div class="skill-bar"><span></span></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section projects-section" id="projects">
+      <div class="section-heading reveal">
+        <p class="eyebrow">Projects</p>
+  
+      </div>
+
+      <div class="filter-bar reveal" role="group" aria-label="Filter projects by technology">
+        <button class="filter-btn active" type="button" data-filter="all">All</button>
+        <button class="filter-btn" type="button" data-filter="csharp">C#</button>
+        <button class="filter-btn" type="button" data-filter="aspnet">ASP.NET</button>
+        <button class="filter-btn" type="button" data-filter="python">Python</button>
+        <button class="filter-btn" type="button" data-filter="mobile">Mobile</button>
+        <button class="filter-btn" type="button" data-filter="ai">AI</button>
+      </div>
+
+      <div class="projects-grid">
+        <article class="project-card reveal" data-tech="csharp">
+          <div class="project-header">
+            <span class="project-kicker">Web Forms</span>
+            <h3>Car Rental System</h3>
+          </div>
+          <p>Built using C# Web Forms with text files for lightweight storage and rental workflow management.</p>
+          <ul>
+            <li>Vehicle booking</li>
+            <li>Availability tracking</li>
+            <li>Customer management</li>
+          </ul>
+          <div class="tags">
+            <span>C#</span>
+            <span>Web Forms</span>
+            <span>Text Files</span>
+          </div>
+          <div class="project-actions">
+            <a href="#" aria-label="View Car Rental System GitHub repository">GitHub</a>
+            <a href="#" aria-label="View Car Rental System demo">Demo</a>
+          </div>
+        </article>
+
+        <article class="project-card reveal featured" data-tech="aspnet csharp ai">
+          <div class="project-header">
+            <span class="project-kicker">Enterprise System</span>
+            <h3>Furniture Shop Full Stack Application</h3>
+          </div>
+          <p>Enterprise-level ASP.NET MVC application using layered architecture for e-commerce, operations, HR, logistics, manufacturing, and inventory tracking.</p>
+          <ul>
+            <li>E-commerce ordering with Stripe integration</li>
+            <li>Employee, payroll, and recruitment pipeline</li>
+            <li>Delivery, manufacturing, inventory, AI, and Azure services</li>
+          </ul>
+          <div class="tags">
+            <span>ASP.NET MVC</span>
+            <span>SQL Server</span>
+            <span>Entity Framework</span>
+            <span>Azure</span>
+            <span>Stripe</span>
+          </div>
+          <div class="project-actions">
+            <a href="#" aria-label="View Furniture Shop GitHub repository">GitHub</a>
+            <a href="#" aria-label="View Furniture Shop demo">Demo</a>
+          </div>
+        </article>
+
+        <article class="project-card reveal" data-tech="python">
+          <div class="project-header">
+            <span class="project-kicker">Support Platform</span>
+            <h3>Grievance Portal</h3>
+          </div>
+          <p>Flask and SQLAlchemy portal where students create tickets and staff resolve issues by department.</p>
+          <ul>
+            <li>Authentication</li>
+            <li>Department-based ticket assignment</li>
+            <li>Status tracking and history</li>
+          </ul>
+          <div class="tags">
+            <span>Flask</span>
+            <span>SQLAlchemy</span>
+            <span>Python</span>
+          </div>
+          <div class="project-actions">
+            <a href="#" aria-label="View Grievance Portal GitHub repository">GitHub</a>
+            <a href="#" aria-label="View Grievance Portal demo">Demo</a>
+          </div>
+        </article>
+
+        <article class="project-card reveal" data-tech="mobile ai">
+          <div class="project-header">
+            <span class="project-kicker">Android AI</span>
+            <h3>AI Waste Management Mobile App</h3>
+          </div>
+          <p>Kotlin application using TensorFlow Lite to recognize waste and promote better recycling decisions.</p>
+          <ul>
+            <li>AI waste recognition</li>
+            <li>Sustainability-focused feedback</li>
+            <li>Android Studio mobile interface</li>
+          </ul>
+          <div class="tags">
+            <span>Kotlin</span>
+            <span>TensorFlow Lite</span>
+            <span>Android</span>
+          </div>
+          <div class="project-actions">
+            <a href="#" aria-label="View AI Waste Management GitHub repository">GitHub</a>
+            <a href="#" aria-label="View AI Waste Management demo">Demo</a>
+          </div>
+        </article>
+
+        <article class="project-card reveal" data-tech="mobile">
+          <div class="project-header">
+            <span class="project-kicker">Interactive Mobile</span>
+            <h3>Unity Mobile Application</h3>
+          </div>
+          <p>Interactive mobile experience built with the Unity engine, focused on responsive controls and engaging gameplay flow.</p>
+          <ul>
+            <li>Mobile-first interaction</li>
+            <li>Unity scene management</li>
+            <li>Game-style user experience</li>
+          </ul>
+          <div class="tags">
+            <span>Unity</span>
+            <span>C#</span>
+            <span>Mobile</span>
+          </div>
+          <div class="project-actions">
+            <a href="#" aria-label="View Unity Mobile Application GitHub repository">GitHub</a>
+            <a href="#" aria-label="View Unity Mobile Application demo">Demo</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section contact-section" id="contact">
+      <div class="section-heading reveal">
+        <p class="eyebrow">Contact</p>
+        <h2>Let's build something useful.</h2>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-info reveal">
+          <a href="mailto:appd40215@gmail.com">
+            <span>Email</span>
+            
+          </a>
+          <a href="https://github.com/Sunz403" target="_blank" rel="noreferrer">
+            <span>GitHub</span>
+            
+          </a>
+          <a href="linkedin.com/in/sanele-simamane-1770b6333" target="_blank" rel="noreferrer">
+            <span>LinkedIn</span>
+          </a>
+        </div>
+
+        <form class="contact-form reveal" id="contactForm" novalidate>
+          <div class="form-row">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your name" required>
+            <small class="error-message"></small>
+          </div>
+          <div class="form-row">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="you@example.com" required>
+            <small class="error-message"></small>
+          </div>
+          <div class="form-row">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Tell me about your project or opportunity" required></textarea>
+            <small class="error-message"></small>
+          </div>
+          <button class="btn primary submit-btn" type="submit">Send Message</button>
+          <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>Copyright <span id="year"></span> Sanele Simamane. Built with HTML, CSS, and JavaScript.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
