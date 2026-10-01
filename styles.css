@@ -630,6 +630,11 @@ textarea {
   background: var(--surface-2);
 }
 
+.project-actions a:focus-visible {
+  outline: 3px solid var(--accent);
+  outline-offset: 3px;
+}
+
 .contact-info {
   display: grid;
   align-content: start;
